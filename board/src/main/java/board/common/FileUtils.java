@@ -25,7 +25,7 @@ public class FileUtils {
 		List<BoardFileDto> fileList = new ArrayList<>();
 		DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyyMMdd");
 		ZonedDateTime current = ZonedDateTime.now();
-		String path = "images/" + current.format(format);
+		String path = "/Users/seungyuncho/Downloads/temp/" + current.format(format);
 		File file = new File(path);
 		if(file.exists() == false) {
 			file.mkdir();
@@ -66,7 +66,7 @@ public class FileUtils {
 					boardFile.setStoredFilePath(path+"/"+newFileName);
 					fileList.add(boardFile);
 					
-					file = new File("/Users/seungyuncho/Downloads/temp" + "/" + newFileName);
+					file = new File(path + "/" + newFileName);
 					multipartFile.transferTo(file);
 					
 				}
