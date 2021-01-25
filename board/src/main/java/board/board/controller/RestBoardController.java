@@ -7,8 +7,6 @@ import java.util.List;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.io.FileUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -24,7 +22,6 @@ import board.board.dto.BoardDto;
 import board.board.dto.BoardFileDto;
 import board.board.service.BoardService;
 
-import board.board.service.BoardService;
 
 @Controller
 public class RestBoardController {
@@ -67,7 +64,7 @@ public class RestBoardController {
 		return mv;
 	}
 	
-	@RequestMapping(value="/board/{boardIdx}", method=RequestMethod.POST, produces = "application/json; charset=utf8")
+	@RequestMapping(value="/board/{boardIdx}", method=RequestMethod.PUT)
 	public String updateBoard(BoardDto board) throws Exception{
 		boardService.updateBoard(board);
 		return "redirect:/board";

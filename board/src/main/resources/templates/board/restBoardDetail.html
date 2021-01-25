@@ -1,3 +1,4 @@
+  
 <!DOCTYPE html>
 <html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
@@ -20,28 +21,28 @@
 				<tbody>
 					<tr>
 						<th scope="row">글 번호</th>
-						<td th:text="${board.boardIdx}"></td>
+						<td th:text="${board.boardIdx }"></td>
 						<th scope="row">조회수</th>
-						<td th:text="${board.hitCnt}"></td>
+						<td th:text="${board.hitCnt }"></td>
 					</tr>
 					<tr>
 						<th scope="row">작성자</th>
-						<td th:text="${board.creatorId}"></td>
+						<td th:text="${board.creatorId }"></td>
 						<th scope="row">작성일</th>
-						<td th:text="${board.createDatetime}"></td>
+						<td th:text="${board.createDatetime }"></td>
 					</tr>
 					<tr>
 						<th scope="row">제목</th>
-						<td colspan="3"><input type="text" id="title" name="title" th:value="${board.title}"/></td>
+						<td colspan="3"><input type="text" id="title" name="title" th:value="${board.title }"/></td>
 					</tr>
 					<tr>
 						<td colspan="4" class="view_text">
-							<textarea title="내용" id="contents" name="contents" th:text="${board.contents}"></textarea>
+							<textarea title="내용" id="contents" name="contents" th:text="${board.contents }"></textarea>
 						</td>
 					</tr>
 				</tbody>
 			</table>
-			<input type="hidden" id="boardIdx" name="boardIdx" th:value="${board.boardIdx}">
+			<input type="hidden" id="boardIdx" name="boardIdx" th:value="${board.boardIdx }">
 			<!-- 여기 -->
 			<input type="hidden" id="method" name="_method"/>
 		</form>
@@ -69,6 +70,8 @@
 			
 			$("#edit").on("click", function(){
 				/* 여기 */
+				$("#method").val("put");
+				
 				var frm = $("#frm")[0];
 				frm.action = "/board/"+boardIdx;
 				frm.submit();
