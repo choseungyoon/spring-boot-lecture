@@ -1,0 +1,137 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.springframework",
+    "module": "spring-web",
+    "version": "5.3.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "gt2f75atzvb23pcglcp5g2jjzy"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework",
+          "module": "spring-beans",
+          "version": {
+            "requires": "5.3.2"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.taglibs",
+              "module": "taglibs-standard-spec"
+            },
+            {
+              "group": "org.hamcrest",
+              "module": "hamcrest-core"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-core",
+          "version": {
+            "requires": "5.3.2"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.taglibs",
+              "module": "taglibs-standard-spec"
+            },
+            {
+              "group": "org.hamcrest",
+              "module": "hamcrest-core"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-web-5.3.2.jar",
+          "url": "spring-web-5.3.2.jar",
+          "size": 1549576,
+          "sha512": "094b51e9b049257e41e4e488127b72e0f37023287e6b5575f662eabb51ef2fc38ef466aa586bee826c46e7d468b93f8d58082bc68ad9f76a70f0f5304aa476c4",
+          "sha256": "dad5da6219dac7e5572f923e18d81a444b3c635b787b0f8eebba0753cb4b2f85",
+          "sha1": "5ea6e1536ee6a70bb5c2efbd579c688c09a93a4b",
+          "md5": "95ba0e5ec3909dbde15888575b275306"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework",
+          "module": "spring-beans",
+          "version": {
+            "requires": "5.3.2"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.taglibs",
+              "module": "taglibs-standard-spec"
+            },
+            {
+              "group": "org.hamcrest",
+              "module": "hamcrest-core"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework",
+          "module": "spring-core",
+          "version": {
+            "requires": "5.3.2"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.taglibs",
+              "module": "taglibs-standard-spec"
+            },
+            {
+              "group": "org.hamcrest",
+              "module": "hamcrest-core"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-web-5.3.2.jar",
+          "url": "spring-web-5.3.2.jar",
+          "size": 1549576,
+          "sha512": "094b51e9b049257e41e4e488127b72e0f37023287e6b5575f662eabb51ef2fc38ef466aa586bee826c46e7d468b93f8d58082bc68ad9f76a70f0f5304aa476c4",
+          "sha256": "dad5da6219dac7e5572f923e18d81a444b3c635b787b0f8eebba0753cb4b2f85",
+          "sha1": "5ea6e1536ee6a70bb5c2efbd579c688c09a93a4b",
+          "md5": "95ba0e5ec3909dbde15888575b275306"
+        }
+      ]
+    }
+  ]
+}

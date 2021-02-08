@@ -1,0 +1,101 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.springframework.boot",
+    "module": "spring-boot-configuration-processor",
+    "version": "2.4.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "vbd2bptt75f37pnxw4wotn6inu"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "spring-boot-configuration-processor-2.4.1.jar",
+          "url": "spring-boot-configuration-processor-2.4.1.jar",
+          "size": 117521,
+          "sha512": "56d0010b6c8c0b844baa91eb779b5c5a8e72ef9c9f1db86d8493df725701413c4851275811c608f92062513a513ecf4e892cb85091d2c2b2a21c40bc9a8be92e",
+          "sha256": "568320d142dce2695f5ceefea3c5ab94d0d3114529cf8d395d77f632920e5301",
+          "sha1": "d42331b683340464cf7027bf55df6ec52d088eb5",
+          "md5": "13ef6b96eb78d62cbc3b5dad30ff66bb"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "spring-boot-configuration-processor-2.4.1.jar",
+          "url": "spring-boot-configuration-processor-2.4.1.jar",
+          "size": 117521,
+          "sha512": "56d0010b6c8c0b844baa91eb779b5c5a8e72ef9c9f1db86d8493df725701413c4851275811c608f92062513a513ecf4e892cb85091d2c2b2a21c40bc9a8be92e",
+          "sha256": "568320d142dce2695f5ceefea3c5ab94d0d3114529cf8d395d77f632920e5301",
+          "sha1": "d42331b683340464cf7027bf55df6ec52d088eb5",
+          "md5": "13ef6b96eb78d62cbc3b5dad30ff66bb"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "spring-boot-configuration-processor-2.4.1-javadoc.jar",
+          "url": "spring-boot-configuration-processor-2.4.1-javadoc.jar",
+          "size": 117835,
+          "sha512": "775b12313b6a06ee8e651ec9af1d71057dd6390d34ce00c58373d2abbb7d778fe2bb29039c9c737cf9ecc967eb6d0a4bd55931ecd72452040c0a20379220d583",
+          "sha256": "aa0dbe20a68326c283f7fc8b00e38e9b4c9525af7327ba662983c37e694f0b09",
+          "sha1": "6c75765f5c91143e02dbc599acaa95aece9adb43",
+          "md5": "0ebad05d90d19af9e7dee1772561e866"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "spring-boot-configuration-processor-2.4.1-sources.jar",
+          "url": "spring-boot-configuration-processor-2.4.1-sources.jar",
+          "size": 78969,
+          "sha512": "933daf254b4b500a6631607b57e815f55a5fdcee674edc6a8350bdf05129e5bb9d88003b42f496d6278c64a548313685a379e51e2b38236c8ff41f18574b21ef",
+          "sha256": "a148f9827bfa1472b5e3b114900427cf5c4e0c63d6106f2c23ddef379b48f7d1",
+          "sha1": "954abd0be567e22cb90930a940cb712a7e2e024c",
+          "md5": "12fd924e7bb5f0f8b6e407f0b678d6e4"
+        }
+      ]
+    }
+  ]
+}
