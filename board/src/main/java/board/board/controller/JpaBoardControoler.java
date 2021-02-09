@@ -74,7 +74,7 @@ public class JpaBoardControoler {
 		//return "redirect:/board/openBoardList.do";
 		return "redirect:/jpa/board";
 	}
-	
+
 	@RequestMapping(value="/jpa/board/file", method=RequestMethod.GET)
 	public void downloadBoardFile(@RequestParam int idx, @RequestParam int boardIdx, HttpServletResponse response) throws Exception{
 		BoardFileEntity file = jpaBoardService.selectBoardFileInformation(idx, boardIdx);
