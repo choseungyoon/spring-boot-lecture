@@ -12,18 +12,13 @@
           contain
           src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
           transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
+          width="30"
         />
       </div>
+
+      <v-toolbar-title>
+        <span class="second-word font uppercase">To Fire</span>
+      </v-toolbar-title>
 
       <v-spacer></v-spacer>
 
@@ -32,9 +27,19 @@
         target="_blank"
         text
       >
-        <span class="mr-2">Latest Release</span>
+        <span class="mr-2">Login</span>
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
+
+
+      <template v-slot:extension>
+        <v-tabs align-with-title>
+          <v-tab>HOME</v-tab>
+          <v-tab>SEARCH</v-tab>
+          <v-tab>PORTFOLIO</v-tab>
+        </v-tabs>
+      </template>
+
     </v-app-bar>
 
     <v-main>
