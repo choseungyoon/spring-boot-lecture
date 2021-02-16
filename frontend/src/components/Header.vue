@@ -1,9 +1,10 @@
 <template>
-    <v-app-bar
+  <nav>
+      <v-app-bar
       app
       color="primary"
       dark
-    >
+      >
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
@@ -32,18 +33,20 @@
 
       <template v-slot:extension>
         <v-tabs align-with-title>
-          <v-tab> <router-link to="home">Home</router-link></v-tab>
-          <v-tab>SEARCH</v-tab>
+          <v-tab to="/home">HOME</v-tab>
+          <v-tab to="/about">SEARCH</v-tab>
           <v-tab>PORTFOLIO</v-tab>
         </v-tabs>
+
       </template>
     </v-app-bar>
-
+  </nav>
 </template>
 
 <script>
 
-export default {
-    name: 'Header'
-}
+  // 뷰 라우터를 인스턴스에 등록
+  export default {
+    name: 'Header' 
+  }
 </script>
